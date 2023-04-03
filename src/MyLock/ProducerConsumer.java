@@ -39,7 +39,7 @@ class DataTest{
                 while(number < 15) {
                     number++;
                     Thread.sleep(300);
-                    System.out.println("开始生产 => " + number);
+                    System.out.println(Thread.currentThread().getName() + "开始生产 => " + number);
                 }
 
                 System.out.println("生产满了，通知消费者");
@@ -64,7 +64,7 @@ class DataTest{
                 }
 
                 Thread.sleep(300);
-                System.out.println("开始消费 => " + number);
+                System.out.println(Thread.currentThread().getName() + "开始消费 => " + number);
                 number--;
 
                 condition.signalAll();
