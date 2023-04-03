@@ -9,6 +9,7 @@ public class JoinTest implements Runnable{
     public static void main(String[] args) throws InterruptedException {
         JoinTest joinTest = new JoinTest();
         Thread myThread = new Thread(joinTest);
+
         myThread.start();
 
         for (int i = 0; i < 10000; i++) {
