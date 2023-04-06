@@ -1,6 +1,6 @@
-package MyThread;
+package ThreadDemo;
 
-public class MyRunnable implements Runnable{
+public class RunnableDemo implements Runnable{
     @Override
     public void run() {
         System.out.println("使用显示Runnable接口来实现多线程");
@@ -9,8 +9,8 @@ public class MyRunnable implements Runnable{
 
     public static void main(String[] args) {
 
-        MyRunnable myRunnable = new MyRunnable();
-        Thread myThread2 = new Thread(myRunnable);
+        RunnableDemo runnableDemo = new RunnableDemo();
+        Thread myThread2 = new Thread(runnableDemo);
 
         myThread2.start();
     }

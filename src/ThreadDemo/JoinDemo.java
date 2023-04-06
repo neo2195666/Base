@@ -1,14 +1,14 @@
-package MyThread;
+package ThreadDemo;
 
-public class JoinTest implements Runnable{
+public class JoinDemo implements Runnable{
     @Override
     public void run() {
         System.out.println("执行join");
     }
 
     public static void main(String[] args) throws InterruptedException {
-        JoinTest joinTest = new JoinTest();
-        Thread myThread = new Thread(joinTest);
+        JoinDemo joinDemo = new JoinDemo();
+        Thread myThread = new Thread(joinDemo);
 
         myThread.start();
 

@@ -1,6 +1,6 @@
-package MyThread;
+package ThreadDemo;
 
-public class MyThread extends Thread{
+public class ThreadDemo extends Thread{
     @Override
     public void run() {
         System.out.println("使用继承Thread类实现多线程");
@@ -8,9 +8,9 @@ public class MyThread extends Thread{
 
 
     public static void main(String[] args) {
-        MyThread myThread = new MyThread();
+        ThreadDemo threadDemo = new ThreadDemo();
 
-        myThread.start();
+        threadDemo.start();
     }
 
 

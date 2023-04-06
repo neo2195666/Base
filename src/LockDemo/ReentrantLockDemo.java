@@ -1,9 +1,9 @@
-package MyLock;
+package LockDemo;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class MyReentrantLock {
+public class ReentrantLockDemo {
     public static void main(String[] args) {
         TicketTest ticketTest = new TicketTest();
         new Thread( ()->{for (int i = 0; i < 20; i++)ticketTest.sale();},"E").start();

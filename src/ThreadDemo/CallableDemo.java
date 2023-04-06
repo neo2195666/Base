@@ -1,8 +1,8 @@
-package MyThread;
+package ThreadDemo;
 
 import java.util.concurrent.*;
 
-public class MyCallable implements Callable<Boolean> {
+public class CallableDemo implements Callable<Boolean> {
     @Override
     public Boolean call() throws Exception {
 
@@ -13,7 +13,7 @@ public class MyCallable implements Callable<Boolean> {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        MyCallable myCallable = new MyCallable();
+        CallableDemo myCallable = new CallableDemo();
 
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         Future<Boolean> booleanFuture = executorService.submit(myCallable);

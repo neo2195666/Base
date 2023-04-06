@@ -1,4 +1,4 @@
-package MyLock;
+package LockDemo;
 
 //synchronized本质就是排队
 

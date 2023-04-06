@@ -1,10 +1,10 @@
-package MyLock;
+package LockDemo;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class MyCondition {
+public class ConditionDemo {
     public static void main(String[] args) {
         ConditionTest conditionTest = new ConditionTest();
         new Thread(()->{for (int i = 0; i < 10; i++) conditionTest.printA();},"Thread1").start();

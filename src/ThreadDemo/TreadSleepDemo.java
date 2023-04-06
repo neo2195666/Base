@@ -1,4 +1,4 @@
-package MyThread;
+package ThreadDemo;
 
 class ThreadSleepDemo extends Thread{
     int num = 15;
@@ -17,7 +17,7 @@ class ThreadSleepDemo extends Thread{
     }
 }
 
-public class MyTreadSleep {
+public class TreadSleepDemo {
 
     public static void main(String[] args) {
 
